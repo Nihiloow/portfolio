@@ -11,3 +11,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+window.addEventListener("load", () => {
+  // Animation aléatoire pour chaque blob
+  function moveBlob(selector) {
+    gsap.to(selector, {
+      x: "random(-100, 100)",
+      y: "random(-100, 100)",
+      duration: "random(10, 20)",
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut",
+    });
+  }
+
+  moveBlob(".blob-1");
+  moveBlob(".blob-2");
+  moveBlob(".blob-3");
+});
