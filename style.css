@@ -1,0 +1,30 @@
+/*
+Theme Name: Portfolio - Perso
+Author: Nathan VINCENTE
+Description: Thème minimaliste one-page avec JavaScript.
+Version: 1.0
+*/
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://raw.githubusercontent.com/Anemolo/Grainy-Gradient-Playground/main/noise.png");
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 9999;
+}
